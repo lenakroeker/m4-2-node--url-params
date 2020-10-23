@@ -53,7 +53,7 @@ express()
     console.log(req.params)
     let byArtist = 0;
 
-    byArtist = top50.find((obj) => {
+    byArtist = top50.filter((obj) => {
       if (obj.artist.toLowerCase() === req.params.artistId) {
         return obj
       }

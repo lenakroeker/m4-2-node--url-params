@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Header from "./Header";
 import Content from "./Content";
 
+
 const HomePage = () => {
   const [artists, setArtists] = useState([]);
 
