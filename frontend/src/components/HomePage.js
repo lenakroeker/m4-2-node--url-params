@@ -7,14 +7,15 @@ import Content from "./Content";
 const HomePage = () => {
   const [artists, setArtists] = useState([]);
 
+
   useEffect(() => {
-    fetch(`/top50/artist`)
+    fetch(`/top50/artists`)
       .then((res) => res.json())
       .then((json) => {
         setArtists(json.data);
       });
   }, []);
-
+  console.log(artists)
   return (
     <>
       <Header pageTitle="Music Homepage" />
